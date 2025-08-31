@@ -1,14 +1,22 @@
-# Local ticket data
-data.json
+# Node modules
+node_modules/
+
+# Environment variables
+.env
 
 # Logs
-node_modules/
-.env
-data.json
-
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# VSCode settings
+# OS files
+.DS_Store
+Thumbs.db
+
+# JSON data storage
+data.json
+users.json
+
+
 .vscode/
+.idea/
