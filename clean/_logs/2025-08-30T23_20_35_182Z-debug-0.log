@@ -1,0 +1,155 @@
+0 verbose cli C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:C:\Users\bolar\AppData\Local\nvm\v22.18.0\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\bolar\Desktop\YbeeApp\.npmrc
+5 silly config load:file:C:\Users\bolar\.npmrc
+6 silly config load:file:C:\nvm4w\nodejs\etc\npmrc
+7 verbose title npm install express body-parser express-session ejs
+8 verbose argv "install" "express" "body-parser" "express-session" "ejs"
+9 verbose logfile logs-max:10 dir:C:\Users\bolar\Desktop\YbeeApp\clean\_logs\2025-08-30T23_20_35_182Z-
+10 verbose logfile C:\Users\bolar\Desktop\YbeeApp\clean\_logs\2025-08-30T23_20_35_182Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest body-parser@^2.2.0
+16 silly packumentCache full:https://registry.npmjs.org/body-parser cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/body-parser 675ms (cache revalidated)
+18 silly packumentCache full:https://registry.npmjs.org/body-parser set size:209520 disposed:false
+19 silly fetch manifest ejs@^3.1.10
+20 silly packumentCache full:https://registry.npmjs.org/ejs cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/ejs 56ms (cache revalidated)
+22 silly packumentCache full:https://registry.npmjs.org/ejs set size:143086 disposed:false
+23 silly fetch manifest express@^5.1.0
+24 silly packumentCache full:https://registry.npmjs.org/express cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/express 62ms (cache revalidated)
+26 silly packumentCache full:https://registry.npmjs.org/express set size:796235 disposed:false
+27 silly fetch manifest express-session@^1.18.2
+28 silly packumentCache full:https://registry.npmjs.org/express-session cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/express-session 61ms (cache revalidated)
+30 silly packumentCache full:https://registry.npmjs.org/express-session set size:194964 disposed:false
+31 silly placeDep ROOT body-parser@2.2.0 REPLACE for: ybeeapp@1.0.0 want: ^2.2.0
+32 silly placeDep ROOT ejs@3.1.10 REPLACE for: ybeeapp@1.0.0 want: ^3.1.10
+33 silly placeDep ROOT express@5.1.0 REPLACE for: ybeeapp@1.0.0 want: ^5.1.0
+34 silly placeDep ROOT express-session@1.18.2 REPLACE for: ybeeapp@1.0.0 want: ^1.18.2
+35 silly reify moves {}
+36 silly audit bulk request {
+36 silly audit   '@kurkle/color': [ '0.3.4' ],
+36 silly audit   accepts: [ '2.0.0' ],
+36 silly audit   anymatch: [ '3.1.3' ],
+36 silly audit   async: [ '3.2.6' ],
+36 silly audit   'balanced-match': [ '1.0.2' ],
+36 silly audit   'binary-extensions': [ '2.3.0' ],
+36 silly audit   'brace-expansion': [ '2.0.2', '1.1.12' ],
+36 silly audit   braces: [ '3.0.3' ],
+36 silly audit   bytes: [ '3.1.2' ],
+36 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+36 silly audit   'call-bound': [ '1.0.4' ],
+36 silly audit   'chart.js': [ '4.5.0' ],
+36 silly audit   chokidar: [ '3.6.0' ],
+36 silly audit   'concat-map': [ '0.0.1' ],
+36 silly audit   'content-disposition': [ '1.0.0' ],
+36 silly audit   'content-type': [ '1.0.5' ],
+36 silly audit   cookie: [ '0.7.2' ],
+36 silly audit   'cookie-signature': [ '1.2.2', '1.0.7' ],
+36 silly audit   debug: [ '4.4.1', '2.6.9' ],
+36 silly audit   depd: [ '2.0.0' ],
+36 silly audit   dotenv: [ '17.2.1' ],
+36 silly audit   'dunder-proto': [ '1.0.1' ],
+36 silly audit   'ee-first': [ '1.1.1' ],
+36 silly audit   encodeurl: [ '2.0.0' ],
+36 silly audit   'es-define-property': [ '1.0.1' ],
+36 silly audit   'es-errors': [ '1.3.0' ],
+36 silly audit   'es-object-atoms': [ '1.1.1' ],
+36 silly audit   'escape-html': [ '1.0.3' ],
+36 silly audit   etag: [ '1.8.1' ],
+36 silly audit   ms: [ '2.1.3', '2.0.0' ],
+36 silly audit   filelist: [ '1.0.4' ],
+36 silly audit   'fill-range': [ '7.1.1' ],
+36 silly audit   finalhandler: [ '2.1.0' ],
+36 silly audit   forwarded: [ '0.2.0' ],
+36 silly audit   fresh: [ '2.0.0' ],
+36 silly audit   fsevents: [ '2.3.3' ],
+36 silly audit   'function-bind': [ '1.1.2' ],
+36 silly audit   'get-intrinsic': [ '1.3.0' ],
+36 silly audit   'get-proto': [ '1.0.1' ],
+36 silly audit   'glob-parent': [ '5.1.2' ],
+36 silly audit   gopd: [ '1.2.0' ],
+36 silly audit   'has-flag': [ '3.0.0' ],
+36 silly audit   'has-symbols': [ '1.1.0' ],
+36 silly audit   hasown: [ '2.0.2' ],
+36 silly audit   'http-errors': [ '2.0.0' ],
+36 silly audit   statuses: [ '2.0.1', '2.0.2' ],
+36 silly audit   'iconv-lite': [ '0.6.3' ],
+36 silly audit   'ignore-by-default': [ '1.0.1' ],
+36 silly audit   inherits: [ '2.0.4' ],
+36 silly audit   'ipaddr.js': [ '1.9.1' ],
+36 silly audit   'is-binary-path': [ '2.1.0' ],
+36 silly audit   'is-extglob': [ '2.1.1' ],
+36 silly audit   'is-glob': [ '4.0.3' ],
+36 silly audit   'is-number': [ '7.0.0' ],
+36 silly audit   'is-promise': [ '4.0.0' ],
+36 silly audit   jake: [ '10.9.4' ],
+36 silly audit   'math-intrinsics': [ '1.1.0' ],
+36 silly audit   'media-typer': [ '1.1.0' ],
+36 silly audit   'merge-descriptors': [ '2.0.0' ],
+36 silly audit   'mime-db': [ '1.54.0' ],
+36 silly audit   'mime-types': [ '3.0.1' ],
+36 silly audit   minimatch: [ '5.1.6', '3.1.2' ],
+36 silly audit   negotiator: [ '1.0.0' ],
+36 silly audit   nodemon: [ '3.1.10' ],
+36 silly audit   'normalize-path': [ '3.0.0' ],
+36 silly audit   'object-inspect': [ '1.13.4' ],
+36 silly audit   'on-finished': [ '2.4.1' ],
+36 silly audit   'on-headers': [ '1.1.0' ],
+36 silly audit   once: [ '1.4.0' ],
+36 silly audit   parseurl: [ '1.3.3' ],
+36 silly audit   'path-to-regexp': [ '8.2.0' ],
+36 silly audit   picocolors: [ '1.1.1' ],
+36 silly audit   picomatch: [ '2.3.1' ],
+36 silly audit   'proxy-addr': [ '2.0.7' ],
+36 silly audit   'pstree.remy': [ '1.1.8' ],
+36 silly audit   qs: [ '6.14.0' ],
+36 silly audit   'random-bytes': [ '1.0.0' ],
+36 silly audit   'range-parser': [ '1.2.1' ],
+36 silly audit   'raw-body': [ '3.0.0' ],
+36 silly audit   readdirp: [ '3.6.0' ],
+36 silly audit   router: [ '2.2.0' ],
+36 silly audit   'safe-buffer': [ '5.2.1' ],
+36 silly audit   'safer-buffer': [ '2.1.2' ],
+36 silly audit   semver: [ '7.7.2' ],
+36 silly audit   send: [ '1.2.0' ],
+36 silly audit   'serve-static': [ '2.2.0' ],
+36 silly audit   setprototypeof: [ '1.2.0' ],
+36 silly audit   'side-channel': [ '1.1.0' ],
+36 silly audit   'side-channel-list': [ '1.0.0' ],
+36 silly audit   'side-channel-map': [ '1.0.1' ],
+36 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+36 silly audit   'simple-update-notifier': [ '2.0.0' ],
+36 silly audit   'supports-color': [ '5.5.0' ],
+36 silly audit   'to-regex-range': [ '5.0.1' ],
+36 silly audit   toidentifier: [ '1.0.1' ],
+36 silly audit   touch: [ '3.1.1' ],
+36 silly audit   'type-is': [ '2.0.1' ],
+36 silly audit   'uid-safe': [ '2.1.5' ],
+36 silly audit   undefsafe: [ '2.0.5' ],
+36 silly audit   unpipe: [ '1.0.0' ],
+36 silly audit   vary: [ '1.1.2' ],
+36 silly audit   wrappy: [ '1.0.2' ],
+36 silly audit   'body-parser': [ '2.2.0' ],
+36 silly audit   ejs: [ '3.1.10' ],
+36 silly audit   express: [ '5.1.0' ],
+36 silly audit   'express-session': [ '1.18.2' ]
+36 silly audit }
+37 verbose reify failed optional dependency C:\Users\bolar\Desktop\YbeeApp\node_modules\fsevents
+38 silly reify mark deleted [ 'C:\\Users\\bolar\\Desktop\\YbeeApp\\node_modules\\fsevents' ]
+39 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 230ms
+40 silly audit report {}
+41 silly ADD
+42 verbose cwd C:\Users\bolar\Desktop\YbeeApp
+43 verbose os Windows_NT 10.0.26100
+44 verbose node v22.18.0
+45 verbose npm  v10.9.3
+46 verbose exit 0
+47 info ok

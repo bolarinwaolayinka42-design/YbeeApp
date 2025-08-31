@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Management Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome, <%= user %>!</h1>
+
+    <!-- Ticket Summary -->
+    <h3>Ticket Summary</h3>
+    <canvas id="ticketChart" width="400" height="200"></canvas>
+
+    <!-- Recent Tickets -->
+    <h3>Recent Tickets</h3>
+    <table border="1" cellpadding="5">
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Status</th>
+        <th>SLA</th>
+        <th>Assigned To</th>
+        <th>Actions</th>
+      </tr>
+      <% tickets.forEach(t => { %>
+      <tr>
+        <td><%= t.id %></td>
+        <td><%= t.title %></td>
+        <td>
+          <form method="POST" action="/tickets/update/<%= t.id %>">
+            <select name="status">
+              <option value="Open" <%= t.status==='Open'?'selected':'' %>>Open</option>
+              <option value="Pending" <%= t.status==='Pending'?'selected':'' %>>Pending</option>
+              <option value="Closed" <%= t.status==='Closed'?'selected':'' %>>Closed</option>
+            </select>
+            <button type="submit">Update</button>
+          </form>
+        </td>
+        <td><%= t.sla %></td>
+        <td>
+          <form method="POST" action="/tickets/assign/<%= t.id %>">
+            <select name="assignedTo">
+              <option value="">--Assign--</option>
+              <% users.forEach(u => { %>
+                <option value="<%= u.email %>" <%= t.assignedTo===u.email?'selected':'' %>><%= u.email %></option>
+              <% }) %>
+            </select>
+            <button type="submit">Assign</button>
+          </form>
+        </td>
+        <td>
+          <form method="POST" action="/tickets/delete/<%= t.id %>">
+            <button style="background:red;color:white;">Delete</button>
+          </form>
+        </td>
+      </tr>
+      <% }) %>
+    </table>
+
+    <a href="/logout" class="btn">Logout</a>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('ticketChart').getContext('2d');
+    const ticketChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: <%- JSON.stringify(Object.keys(ticketSummary)) %>,
+        datasets: [{
+          label: '# of Tickets',
+          data: <%- JSON.stringify(Object.values(ticketSummary)) %>,
+          backgroundColor: ['#3498db', '#f1c40f', '#e74c3c']
+        }]
+      },
+      options: { responsive: true }
+    });
+  </script>
+</body>
+</html>
