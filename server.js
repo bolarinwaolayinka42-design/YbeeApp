@@ -131,3 +131,32 @@ app.get("/logout", (req, res) => {
 app.listen(PORT, () =>
   console.log(`Server running at http://localhost:${PORT}`)
 );
+
+
+// Render create ticket form
+app.get("/tickets/create", (req, res) => {
+  if (!req.session.user) return res.redirect("/");
+  res.render("createTicket", { user: req.session.user.email, error: null });
+});
+
+// Handle form submission
+app.post("/tickets/create", (req, res) => {
+  if (!req.session.user) return res.redirect("/");
+
+  const { title, sla } = req.body;
+  let tickets = getTickets();
+
+  // Create a new ticket object
+  const newTicket = {
+    id: `T${tickets.length + 1}`, // simple ID generation
+    title,
+    status: "Open",
+    sla,
+    assignedTo: "",
+  };
+
+  tickets.push(newTicket);
+  saveTickets(tickets);
+
+  res.redirect("/dashboard");
+});

@@ -1,75 +1,89 @@
-# YbeeApp - Ybee Management Dashboard
+# Ybee Project Management Dashboard
 
-A simple **management dashboard** built with **Node.js**, **Express**, **EJS**, and **session-based authentication**. This app allows users to log in, manage tickets, update statuses, and track a ticket summary chart.
-
----
-
-## Features
-
-- User registration and login with **bcrypt password hashing**
-- Session management using **express-session**
-- Dashboard with:
-  - Ticket summary (Open, Pending, Closed)
-  - Update ticket status
-  - Assign tickets to users
-  - Delete tickets
-- Chart.js integration for visual ticket summary
-- Data stored in `data.json` (simple JSON file storage)
-- Clean EJS-based views and static assets
+![Node.js](https://img.shields.io/badge/node-%3E%3D14.0-green)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Issues](https://img.shields.io/github/issues/bolarinwaolayinka42-design/YbeeApp)
+![Last Commit](https://img.shields.io/github/last-commit/bolarinwaolayinka42-design/YbeeApp)
 
 ---
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v18+ recommended)
-- npm
-
-### Installation
-
-1. Clone the repo:
-`git clone https://github.com/bolarinwaolayinka42-design/YbeeApp`
-`cd YbeeApp`
-
-2. Install dependencies:
+## About
+A simple **management dashboard** built with **Node.js**, **Express**, **EJS**, and **session-based authentication**.
+...
 
 
-`npm install`
-Create a .env file in the root directory:
+YbeeApp – Project Management Web Application
 
-env
+YbeeApp is a lightweight project management and ticketing web application built with Node.js, Express, and EJS. It enables teams to track tasks, manage tickets, and monitor progress through a simple but effective dashboard.
 
-SESSION_SECRET=your_super_secret_key_here
-Important: Do not commit this file to GitHub.
+Features
 
-Start the server:
+User Authentication – Register, login, and logout securely.
 
+Dashboard View – Welcome screen personalized for each user.
 
-node server.js
-Open your browser and go to:
+Ticket Management –
 
-``http://localhost:3000``
+Create, view, and update support/project tickets.
+
+Track ticket status (Open, Pending, Closed).
+
+Assign tickets to team members.
+
+Delete tickets when resolved.
+
+Analytics Dashboard – Visualize ticket distribution using Chart.js.
+
+Team Collaboration – Assign tickets to registered users dynamically.
+
+Tech Stack
+
+`Backend: Node.js + Express`
+
+`Frontend: EJS templating + CSS`
+
+`Database: JSON file (for demo) – can be extended to MongoDB or SQL`
+
+`Charts: Chart.js`
+
+`Authentication: Simple session-based auth`
 
 Project Structure
 
 YbeeApp/
-├── public/           # CSS, JS, and static assets
-├── views/            # EJS templates
-├── data.json         # Ticket storage
-├── server.js         # Main Express app
+│
+├── public/              # Static assets (CSS, JS)
+│   └── css/style.css
+├── views/               # EJS templates
+│   ├── index.ejs
+│   ├── login.ejs
+│   ├── register.ejs
+│   └── dashboard.ejs
+├── users.json           # Sample user data (mock DB)
+├── server.js            # Main application entry point
 ├── package.json
-├── package-lock.json
-├── .gitignore
 └── README.md
 
-Security Note
+Getting Started
+1. Clone the repo
 
-Your session secret is stored in .env and should never be pushed to GitHub.
+`git clone https://github.com/bolarinwaolayinka42-design/YbeeApp.git`
+`cd YbeeApp`
 
-Add .env to .gitignore:
+2. Install dependencies
+ `npm install`
 
+ 3.Run the app
+` node server.js`
+4. Make sure to install bcryptjs for password hashing:
+   `npm install bcryptjs`
 
+   App will be running on http://localhost:3000
 
+   Screenshots
+Dashboard with Ticket Summary
 
+Why this project matters
+
+This project is more than a dashboard — it demonstrates how to build a real-world project management system from scratch with authentication, CRUD functionality, analytics, and team collaboration. It’s a solid foundation for scaling into a SaaS product.
 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Ticket</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create Ticket</h1>
+    <form method="POST" action="/tickets/create">
+      <label>Title:</label>
+      <input type="text" name="title" required />
+      <br/>
+      <label>SLA:</label>
+      <input type="text" name="sla" required />
+      <br/>
+      <button type="submit">Create Ticket</button>
+    </form>
+    <br/>
+    <a href="/dashboard">Back to Dashboard</a>
+  </div>
+</body>
+</html>
