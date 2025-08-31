@@ -1,4 +1,4 @@
-# Ybee Project Management Dashboard
+# Ybee Management Dashboard
 
 ![Node.js](https://img.shields.io/badge/node-%3E%3D14.0-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -12,9 +12,9 @@ A simple **management dashboard** built with **Node.js**, **Express**, **EJS**, 
 ...
 
 
-YbeeApp – Project Management Web Application
+YbeeApp – Management Dashboard
 
-YbeeApp is a lightweight project management and ticketing web application built with Node.js, Express, and EJS. It enables teams to track tasks, manage tickets, and monitor progress through a simple but effective dashboard.
+YbeeApp is a lightweight management and ticketing web application built with Node.js, Express, and EJS. It enables teams to track tasks, manage tickets, and monitor progress through a simple but effective dashboard.
 
 Features
 
@@ -31,6 +31,7 @@ Track ticket status (Open, Pending, Closed).
 Assign tickets to team members.
 
 Delete tickets when resolved.
+Create tickets
 
 Analytics Dashboard – Visualize ticket distribution using Chart.js.
 
@@ -48,19 +49,19 @@ Tech Stack
 
 `Authentication: Simple session-based auth`
 
-Project Structure
+Structure
 
 YbeeApp/
 │
-├── public/              # Static assets (CSS, JS)
+├── public/              
 │   └── css/style.css
-├── views/               # EJS templates
+├── views/               
 │   ├── index.ejs
 │   ├── login.ejs
 │   ├── register.ejs
 │   └── dashboard.ejs
-├── users.json           # Sample user data (mock DB)
-├── server.js            # Main application entry point
+├── users.json           
+├── server.js            
 ├── package.json
 └── README.md
 
@@ -85,5 +86,5 @@ Dashboard with Ticket Summary
 
 Why this project matters
 
-This project is more than a dashboard — it demonstrates how to build a real-world project management system from scratch with authentication, CRUD functionality, analytics, and team collaboration. It’s a solid foundation for scaling into a SaaS product.
+This project is more than a dashboard — it demonstrates how to build a real-world management system from scratch with authentication, CRUD functionality, analytics, and team collaboration. It’s a solid foundation for scaling into a SaaS product.
 
